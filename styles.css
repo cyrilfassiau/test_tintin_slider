@@ -159,12 +159,14 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   min-height: 400px;
+  align-items: center;
 }
 
 .details-image {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 400px; /* ou la hauteur que tu veux garder */
+  flex-shrink: 0;
 }
 
 .gallery-container {
@@ -176,7 +178,7 @@ h1 {
 .gallery-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* garde le ratio sans étirer */
   transition: transform 0.3s ease;
 }
 
